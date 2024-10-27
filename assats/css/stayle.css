@@ -1,0 +1,52 @@
+:root {
+}
+body {
+  background-color: black;
+}
+/* ! ===>loading */
+.loading-screen {
+  display: flex;
+  z-index: 1000;
+}
+/* !====> start navbar */
+nav {
+  width: 330px;
+  background-color: black;
+  z-index: 9999;
+  left: 1px;
+  left: -259.891px;
+}
+nav .list ul li {
+  width: 0;
+  text-wrap: nowrap;
+  transition: width 500ms;
+  border-radius: 11px;
+  cursor: pointer;
+  top: 300px;
+}
+nav .list ul li:hover {
+  width: 100%;
+  background-color: white;
+}
+nav .list ul li:hover a {
+  color: black !important;
+}
+
+nav .icon-control i {
+  cursor: pointer;
+}
+/* ^ section */
+.container .row .meal-name {
+  background-color: #f9f6f6ca;
+  top: 100%;
+  transition: top 400ms;
+}
+.container .row .inner:hover .meal-name {
+  top: 0px;
+}
+.container .row .form-control {
+  color: #fff;
+}
+.col-md-3 {
+  cursor: pointer;
+}
