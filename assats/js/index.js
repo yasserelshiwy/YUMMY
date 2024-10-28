@@ -64,6 +64,7 @@ $(".search-link").on("click", function () {
   $(".row-serch").removeClass("d-none");
   $(".Contact-container").addClass("d-none");
   $("nav").animate({ left: `-${listWidth}px` }, 600);
+  $(".icon-control i").removeClass("fa-xmark").addClass("fa-bars");
 });
 async function getSerchByName(a) {
   $(".loading-screen").fadeIn(500);
@@ -143,6 +144,7 @@ $(".Categories-meals").on("click", function () {
   $(".row-serch").addClass("d-none");
   $(".Contact-container").addClass("d-none");
   $("nav").animate({ left: `-${listWidth}px` }, 600);
+  $(".icon-control i").removeClass("fa-xmark").addClass("fa-bars");
   getCategoriesMelas();
 });
 
@@ -259,6 +261,7 @@ $(".array-link").on("click", function () {
   $(".row-serch").addClass("d-none");
   $(".Contact-container").addClass("d-none");
   $("nav").animate({ left: `-${listWidth}px` }, 600);
+  $(".icon-control i").removeClass("fa-xmark").addClass("fa-bars");
   getArrayList();
 });
 async function getArrayList() {
@@ -304,6 +307,7 @@ $(".Ingredients").on("click", function () {
   $(".row-serch").addClass("d-none");
   $(".Contact-container").addClass("d-none");
   $("nav").animate({ left: `-${listWidth}px` }, 600);
+  $(".icon-control i").removeClass("fa-xmark").addClass("fa-bars");
   getArrayIngredients();
 });
 async function getArrayIngredients() {
@@ -438,5 +442,5 @@ $(".Contact").on("click", function () {
   $(".Contact-container").removeClass("d-none");
   $(".row-serch").addClass("d-none");
   $("nav").animate({ left: `-${listWidth}px` }, 600);
-  console.log("sss");
+  $(".icon-control i").removeClass("fa-xmark").addClass("fa-bars");
 });
